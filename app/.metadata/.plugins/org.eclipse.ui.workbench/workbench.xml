@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="12" version="2.0">
+<workbench progressCount="27" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="175" y="92">
 <fastViewData fastViewLocation="1024"/>
@@ -16,6 +16,7 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -23,6 +24,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -35,6 +37,10 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -44,6 +50,20 @@
 </editor>
 <editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" partName="strings.xml" path="C:/Users/Randy/Documents/GitHub/software-engineering/app/SympMeds/res/values/strings.xml" title="strings.xml" tooltip="SympMeds/res/values/strings.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SympMeds/res/values/strings.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="C:/Users/Randy/Documents/GitHub/software-engineering/app/SympMeds/src/com/example/sympmeds/MainActivity.java" title="MainActivity.java" tooltip="SympMeds/src/com/example/sympmeds/MainActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SympMeds/src/com/example/sympmeds/MainActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="366" selectionTopPixel="131"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_drug_list.xml" partName="activity_drug_list.xml" path="C:/Users/Randy/Documents/GitHub/software-engineering/app/SympMeds/res/layout/activity_drug_list.xml" title="activity_drug_list.xml" tooltip="SympMeds/res/layout/activity_drug_list.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SympMeds/res/layout/activity_drug_list.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DrugList.java" partName="DrugList.java" path="C:/Users/Randy/Documents/GitHub/software-engineering/app/SympMeds/src/com/example/sympmeds/DrugList.java" title="DrugList.java" tooltip="SympMeds/src/com/example/sympmeds/DrugList.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SympMeds/src/com/example/sympmeds/DrugList.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="864" selectionTopPixel="86"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_drug_info.xml" partName="activity_drug_info.xml" path="C:/Users/Randy/Documents/GitHub/software-engineering/app/SympMeds/res/layout/activity_drug_info.xml" title="activity_drug_info.xml" tooltip="SympMeds/res/layout/activity_drug_info.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SympMeds/res/layout/activity_drug_info.xml"/>
 </editor>
 </editors>
 <views>
@@ -59,7 +79,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (2 items)"/>
+<category IMemento.internal.id="Errors (6 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -147,31 +167,21 @@
 <view id="com.android.ide.eclipse.ddms.views.EmulatorControlView"/>
 <view id="com.android.ide.eclipse.ddms.views.SysInfoView"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="devices">
-<folder appearance="2" expanded="2">
-<page content="com.android.ide.eclipse.ddms.views.DeviceView:*" label="LabelNotFound"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="devices">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.DeviceView:*" label="LabelNotFound"/>
 <page content="com.android.ide.eclipse.ddms.views.DeviceView" label="Devices"/>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="devices">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="devices">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="logcat" ratio="0.7990726" ratioLeft="517" ratioRight="130" relationship="4" relative="devices">
-<folder appearance="2" expanded="2">
-<page content="com.android.ide.eclipse.ddms.views.LogCatView:*" label="LabelNotFound"/>
+<info folder="true" part="logcat" ratio="0.7990726" ratioLeft="517" ratioRight="130" relationship="4" relative="devices">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.LogCatView:*" label="LabelNotFound"/>
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.3" ratioLeft="300" ratioRight="700" relationship="2" relative="devices"/>
-<info folder="true" part="ddms-detail" ratio="0.5" ratioLeft="350" ratioRight="350" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="com.android.ide.eclipse.ddms.views.ThreadView:*" label="LabelNotFound"/>
+<info folder="true" part="ddms-detail" ratio="0.5" ratioLeft="350" ratioRight="350" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.ThreadView:*" label="LabelNotFound"/>
 <page content="com.android.ide.eclipse.ddms.views.ThreadView" label="Threads"/>
 <page content="com.android.ide.eclipse.ddms.views.HeapView" label="Heap"/>
 <page content="com.android.ide.eclipse.ddms.views.AllocTrackerView" label="Allocation Tracker"/>
@@ -308,24 +318,131 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/MainActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_drug_list.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/values/strings.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SympMeds/src/com/example/sympmeds/DrugList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_drug_info.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/SympMeds/res/layout/activity_drug_info.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/SympMeds/res/layout/activity_drug_list.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/SympMeds/res/layout/activity_main.xml"/>
 </editors>
-<item historyLabel="activity_main.xml" index="0"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_main.xml" index="0"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_main.xml" index="0"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_main.xml" index="0"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_main.xml" index="0"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_main.xml" index="0"/>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="activity_main.xml" index="0"/>
-<item historyLabel="strings.xml" index="1"/>
-<item active="true" historyLabel="activity_main.xml" index="0"/>
+<item historyLabel="strings.xml" index="2"/>
+<item historyLabel="activity_drug_list.xml" index="1"/>
+<item historyLabel="MainActivity.java" index="0">
+<position info="not_deleted" x="525" y="344"/>
+</item>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="962" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="0">
+<position info="not_deleted" x="1111" y="371"/>
+</item>
+<item historyLabel="activity_drug_list.xml" index="1"/>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="1436" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="0">
+<position info="not_deleted" x="282" y="69"/>
+</item>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="465" y="0"/>
+</item>
+<item historyLabel="activity_drug_list.xml" index="1"/>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="359" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="4"/>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="359" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="4"/>
+<item historyLabel="MainActivity.java" index="0">
+<position info="not_deleted" x="282" y="69"/>
+</item>
+<item historyLabel="activity_drug_list.xml" index="1"/>
+<item historyLabel="strings.xml" index="2"/>
+<item historyLabel="activity_drug_info.xml" index="4"/>
+<item historyLabel="strings.xml" index="2"/>
+<item historyLabel="activity_drug_info.xml" index="4">
+<position info="not_deleted" x="484" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="5">
+<position info="not_deleted" x="492" y="426"/>
+</item>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="359" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="4">
+<position info="not_deleted" x="926" y="425"/>
+</item>
+<item historyLabel="strings.xml" index="2"/>
+<item historyLabel="activity_drug_info.xml" index="4"/>
+<item historyLabel="strings.xml" index="2"/>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="359" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="4">
+<position info="not_deleted" x="1278" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="5">
+<position info="not_deleted" x="1755" y="390"/>
+</item>
+<item historyLabel="strings.xml" index="2"/>
+<item historyLabel="activity_drug_info.xml" index="4">
+<position info="not_deleted" x="2470" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="5">
+<position info="not_deleted" x="2549" y="383"/>
+</item>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="359" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="4">
+<position info="not_deleted" x="2859" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="5">
+<position info="not_deleted" x="1359" y="388"/>
+</item>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="359" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="4">
+<position info="not_deleted" x="1659" y="17"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="5">
+<position info="not_deleted" x="2470" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="5">
+<position info="not_deleted" x="2940" y="388"/>
+</item>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="359" y="0"/>
+</item>
+<item historyLabel="activity_drug_info.xml" index="4"/>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="359" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="0">
+<position info="not_deleted" x="366" y="0"/>
+</item>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="359" y="0"/>
+</item>
+<item historyLabel="activity_drug_list.xml" index="1">
+<position info="not_deleted" x="1245" y="0"/>
+</item>
+<item historyLabel="activity_drug_list.xml" index="6">
+<position info="not_deleted" x="685" y="325"/>
+</item>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="1229" y="0"/>
+</item>
+<item historyLabel="activity_drug_list.xml" index="1"/>
+<item historyLabel="DrugList.java" index="3">
+<position info="not_deleted" x="864" y="0"/>
+</item>
+<item active="true" historyLabel="activity_main.xml" index="7"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -344,6 +461,21 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_drug_info.xml" tooltip="SympMeds/res/layout/activity_drug_info.xml">
+<persistable path="/SympMeds/res/layout/activity_drug_info.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="SympMeds/gen/com/example/sympmeds/R.java">
+<persistable path="/SympMeds/gen/com/example/sympmeds/R.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DrugList.java" tooltip="SympMeds/src/com/example/sympmeds/DrugList.java">
+<persistable path="/SympMeds/src/com/example/sympmeds/DrugList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_drug_list.xml" tooltip="SympMeds/res/layout/activity_drug_list.xml">
+<persistable path="/SympMeds/res/layout/activity_drug_list.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="SympMeds/src/com/example/sympmeds/MainActivity.java">
+<persistable path="/SympMeds/src/com/example/sympmeds/MainActivity.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="SympMeds/res/values/strings.xml">
 <persistable path="/SympMeds/res/values/strings.xml"/>
 </file>
